@@ -14,3 +14,8 @@ Initial Commit
 
 - `bin/rails action_text:install`
 - move trix styles under webpacker
+
+#4
+
+- `bin/rails g scaffold Post title:string content:text`
+- Add root route
