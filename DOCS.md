@@ -24,3 +24,8 @@ Initial Commit
 
 - Add ability to upload image to post by following https://evilmartians.com/chronicles/rails-5-2-active-storage-and-beyond
 - Add post validations
+
+#6
+
+- Import trix styles
+- Update post model and form to use action text
