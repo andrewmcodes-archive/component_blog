@@ -9,3 +9,8 @@ Initial Commit
 - Add bootstrap
 - Upgrade to webpacker 5
 - `rails db:create db:migrate`
+
+#3
+
+- `bin/rails action_text:install`
+- move trix styles under webpacker
