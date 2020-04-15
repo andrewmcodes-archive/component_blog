@@ -17,5 +17,10 @@ Initial Commit
 
 #4
 
-- `bin/rails g scaffold Post title:string content:text`
+- `bin/rails g scaffold Post title:string content:text --no-stylesheets`
 - Add root route
+
+#5
+
+- Add ability to upload image to post by following https://evilmartians.com/chronicles/rails-5-2-active-storage-and-beyond
+- Add post validations
