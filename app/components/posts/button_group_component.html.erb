@@ -1,0 +1,6 @@
+<div class="btn-group">
+  <%= link_to('All Posts', posts_path, class: "btn btn-sm btn-outline-secondary") if index? %>
+  <%= link_to('Show', post, class: "btn btn-sm btn-outline-secondary") if show? %>
+  <%= link_to('Edit', edit_post_path(post), class: "btn btn-sm btn-outline-secondary") if edit? %>
+  <%= link_to('Delete', post, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn btn-sm btn-outline-secondary") if delete? %>
+</div>

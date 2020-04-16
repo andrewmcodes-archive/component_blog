@@ -1,5 +1,11 @@
-<h1>New Post</h1>
-
-<%= render 'form', post: @post %>
-
-<%= link_to 'Back', posts_path %>
+<%= render(PageComponent.new) do |component| %>
+  <% component.with(:title) do %>
+    <h1 class="display-4 mt-4">New Post</h1>
+  <% end %>
+  <% component.with(:body) do %>
+    <div class="container">
+      <%= render 'form', post: @post %>
+      <%= render(Posts::ButtonGroupComponent.new(index: true)) %>
+    </div>
+  <% end %>
+<% end %>

@@ -29,3 +29,10 @@ Initial Commit
 
 - Import trix styles
 - Update post model and form to use action text
+
+#7
+
+- Add `view_component` gem
+- Add `require "view_component/engine"` in `config/application.rb`
+- `bin/rails g component Posts::Preview post`
+- Componetize the views
