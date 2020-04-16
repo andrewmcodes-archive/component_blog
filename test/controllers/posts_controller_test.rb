@@ -1,4 +1,4 @@
-require 'test_helper'
+require "test_helper"
 
 class PostsControllerTest < ActionDispatch::IntegrationTest
   setup do
@@ -16,8 +16,8 @@ class PostsControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should create post" do
-    assert_difference('Post.count') do
-      post posts_url, params: { post: { content: @post.content, title: @post.title } }
+    assert_difference("Post.count") do
+      post posts_url, params: {post: {content: @post.content, title: @post.title}}
     end
 
     assert_redirected_to post_url(Post.last)
@@ -34,12 +34,12 @@ class PostsControllerTest < ActionDispatch::IntegrationTest
   end
 
   test "should update post" do
-    patch post_url(@post), params: { post: { content: @post.content, title: @post.title } }
+    patch post_url(@post), params: {post: {content: @post.content, title: @post.title}}
     assert_redirected_to post_url(@post)
   end
 
   test "should destroy post" do
-    assert_difference('Post.count', -1) do
+    assert_difference("Post.count", -1) do
       delete post_url(@post)
     end
 

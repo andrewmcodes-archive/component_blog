@@ -1,13 +1,15 @@
 <%= render(PageComponent.new) do |component| %>
   <% component.with(:title) do %>
-      <h1 class="display-4 mt-4">Posts</h1>
-    <% end %>
+    <h1 class="display-4 mt-4">Posts</h1>
+  <% end %>
   <% component.with(:body) do %>
     <div class="album">
       <div class="container">
         <div class="row">
           <div class="col-12">
-            <%= render(Posts::PostComponent.with_collection(@posts)) %>
+            <div class="row">
+              <%= render(Posts::PostComponent.with_collection(@posts)) %>
+            </div>
           </div>
           <div class="col-12 col-md-4 offset-md-4">
             <%= link_to 'New Post', new_post_path, class: "btn btn-lg btn-block btn-primary" %>
@@ -15,6 +17,5 @@
         </div>
       </div>
     </div>
-
   <% end %>
 <% end %>
